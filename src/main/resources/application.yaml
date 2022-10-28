@@ -8,5 +8,3 @@ spring:
       group-id: kafka-rest-client-group-id
     producer:
       bootstrap-servers: 192.168.0.111:9092
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
