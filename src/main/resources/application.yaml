@@ -1,0 +1,12 @@
+server:
+  port: 8092
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: 192.168.0.111:9092
+      group-id: kafka-rest-client-group-id
+    producer:
+      bootstrap-servers: 192.168.0.111:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
