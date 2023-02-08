@@ -17,7 +17,7 @@ class MessageToKafkaSenderController(
     fun send(
         @PathVariable topic: String,
         @RequestBody message: String,
-        @RequestHeader(required = false, name = "count") count: Int?,
+        @RequestParam(required = false, name = "count") count: Int?,
     ): String {
         log.info("Count: $count")
 
